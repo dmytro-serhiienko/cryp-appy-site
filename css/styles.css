@@ -414,3 +414,270 @@ button {
 .mobile-img {
   max-width: 520px;
 }
+
+/* ! Reviews Section Styles */
+
+/* Star Rating Styles */
+.star-rating {
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.star-icon {
+  border-radius: 3px;
+  width: 24px;
+  height: 24px;
+  background: #212250;
+  fill: #159be8;
+
+  transition: fill 0.3s ease;
+}
+
+.star-icon:hover {
+  fill: #ffed4e;
+}
+
+.star-icon.star-empty {
+  fill: none;
+  stroke: #ffd700;
+  stroke-width: 1;
+}
+
+/* For rating display container */
+.rating-container {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 10px 0;
+}
+
+.reviews {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.container {
+}
+
+.reviews-subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.11;
+  text-transform: uppercase;
+  text-align: center;
+  color: #159be8;
+  margin-bottom: 28px;
+}
+
+.reviews-title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.35;
+  text-align: center;
+  color: #fff;
+  max-width: 623px;
+  margin: 0 auto;
+  margin-bottom: 42px;
+}
+
+.logo-list {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.logo-img {
+  max-width: 180px;
+}
+
+.logo-item {
+}
+
+.logo-link {
+}
+
+.reviews-list {
+  display: flex;
+  gap: 30px;
+}
+
+.reviews-item {
+  max-width: 295px;
+}
+
+.star-rating {
+}
+
+.star-icon {
+}
+
+.reviews-text {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.76471;
+  color: #fff;
+  margin-bottom: 14px;
+}
+
+.reviews-author {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.reviews-avatar {
+}
+
+.reviews-author-info {
+}
+
+.reviews-author-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.11111;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.reviews-author-role {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14286;
+  color: #fff;
+}
+
+/* !========================== */
+
+.pricing {
+  margin-top: 100px;
+}
+
+.container {
+}
+
+.pricing-subtitle {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+
+  /* line-height: 20px; */
+  line-height: 1.11111;
+  text-transform: uppercase;
+  text-align: center;
+  color: #159be8;
+  margin-bottom: 28px;
+}
+
+.pricing-title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.35;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 8px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.pricing-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66667;
+  text-align: center;
+  color: #fff;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.pricing-billing {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #fff;
+  margin-bottom: 40px;
+  margin-top: 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & span {
+    color: #159be8;
+  }
+}
+
+.pricing-list {
+  display: flex;
+  gap: 20px;
+}
+
+.pricing-item {
+  width: 389px;
+  height: 439px;
+  border-top: #159be8 4px solid;
+  max-width: 390px;
+  padding: 60px 25px 40px 25px;
+  background: #010225;
+  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.05);
+
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing-list .pricing-item:nth-child(2) {
+  border-top: #f95b74 4px solid;
+}
+
+.pricing-list .pricing-item:nth-child(3) {
+  border-top: #7c44e2 4px solid;
+}
+
+.pricing-plan {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.4;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.pricing-price {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.4;
+  color: #fff;
+  margin-bottom: 32px;
+}
+
+.pricing-description {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+
+  /* line-height: 22px; */
+  line-height: 1.375;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.pricing-button {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+
+  /* line-height: 16px; */
+  line-height: 1;
+  color: #fff;
+
+  border: 2px solid #fff;
+  border-radius: 100px;
+  width: 200px;
+  height: 48px;
+
+  background: transparent;
+}
