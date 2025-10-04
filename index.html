@@ -53,7 +53,7 @@
           </ul>
         </nav>
 
-        <button class="buy-button" type="button">Buy CrypAppy</button>
+        <button class="buy-button-header" type="button">Buy CrypAppy</button>
       </div>
     </header>
 
@@ -249,7 +249,9 @@
               </li>
             </ul>
 
-            <button class="buy-button" type="button">Get CrypAppy</button>
+            <button class="buy-button-mobile" type="button">
+              Get CrypAppy
+            </button>
           </div>
           <img class="mobile-img" src="./images/two-mobile.png" alt="" />
         </div>
@@ -546,19 +548,81 @@
         </div>
       </section>
 
-      <section>
-        <div>
-          <h2>Buy CrypAppy today</h2>
-          <p>
+      <section class="buy section">
+        <div class="container">
+          <h2 class="buy-title">Buy CrypAppy today</h2>
+          <p class="buy-subtitle">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             varius enim in eros elementum tristique. Duis cursus, mi quis
             viverra ornare, eros dolor interdum nulla, ut commodo diam libero
             vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem.
           </p>
-          <button>Buy CrypAppy</button>
-          <button>View in designer</button>
+
+          <ul class="buy-list">
+            <li class="buy-item">
+              <button class="buy-button-buy" type="button">Buy CrypAppy</button>
+            </li>
+            <li class="buy-item">
+              <button class="view-button" type="button">
+                View in designer
+              </button>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
+
+    <footer class="footer">
+      <a class="footer-logo" href="#"
+        ><img src="./images/logo.png" alt="logo" width="150"
+      /></a>
+      <p class="footer-text">Subscribe to our newsletter</p>
+      <ul class="social-list">
+        <li class="social-item">
+          <a class="icon-footer" href="">
+            <svg class="icon-footer" width="25" height="25">
+              <use
+                class="icon-footer-use"
+                href="./icons/icons.svg#icon-facebook"
+              ></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="icon-footer" href="">
+            <svg class="icon-footer" width="25" height="25">
+              <use
+                class="icon-footer-use"
+                href="./icons/icons.svg#icon-instagram"
+              ></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="icon-footer" href="">
+            <svg class="icon-footer" width="25" height="25">
+              <use
+                class="icon-footer-use"
+                href="./icons/icons.svg#icon-x"
+              ></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <form class="footer-form" action="">
+        <label class="footer-label" for="">
+          <input
+            class="footer-input"
+            type="mail"
+            name="user-email"
+            id=""
+            placeholder="Your email address"
+          />
+        </label>
+        <button class="footer-button" type="submit">Subscribe</button>
+      </form>
+      <p class="footer-text-last">Crafted by DMYTRO</p>
+    </footer>
   </body>
 </html>
