@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "League Spartan", sans-serif;
   background-color: #0c0d2e;
 }
 
@@ -59,8 +59,6 @@ button {
   align-items: center;
 }
 
-.logo {
-}
 .logo-img {
   max-width: 170px;
 }
@@ -71,14 +69,11 @@ button {
   align-items: center;
 }
 
-.nav {
-}
 .nav-list {
   display: flex;
   gap: 24px;
 }
-.nav-item {
-}
+
 .nav-link {
   font-family: "League Spartan", sans-serif;
   font-weight: 400;
@@ -92,7 +87,6 @@ button {
 }
 
 .buy-button {
-  font-family: "League Spartan", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
@@ -120,7 +114,6 @@ button {
   align-items: center;
 }
 .main-title {
-  font-family: "League Spartan", sans-serif;
   font-weight: 400;
   font-size: 64px;
   line-height: 1.1875;
@@ -130,7 +123,6 @@ button {
 }
 
 .main-subtitle {
-  font-family: "League Spartan", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 2.5;
@@ -140,10 +132,6 @@ button {
 }
 .download-list {
   display: flex;
-}
-.download-item {
-}
-.download-link {
 }
 
 .download-img {
@@ -159,11 +147,8 @@ button {
 }
 
 .about-title {
-  font-family: "League Spartan", sans-serif;
   font-weight: 400;
   font-size: 40px;
-
-  /* line-height: 54px; */
   line-height: 1.35;
   text-align: center;
   color: #fff;
@@ -172,11 +157,8 @@ button {
 }
 
 .about-subtitle {
-  font-family: "League Spartan", sans-serif;
   font-weight: 400;
   font-size: 18px;
-
-  /* line-height: 30px; */
   line-height: 1.66667;
   text-align: center;
   color: #fff;
@@ -206,22 +188,15 @@ button {
   align-items: center;
 }
 
-.about-img {
-}
-
 .about-list-title {
-  font-family: "League Spartan", sans-serif;
   font-weight: 400;
   font-size: 20px;
-
-  /* line-height: 20px; */
   line-height: 1;
   text-align: center;
   color: #fff;
 }
 
 .about-text {
-  font-family: "League Spartan", sans-serif;
   font-weight: 400;
   font-size: 11px;
 
@@ -232,11 +207,110 @@ button {
 }
 
 .about-link {
-  font-family: "League Spartan", sans-serif;
   font-weight: 400;
   font-size: 18px;
-
-  /* line-height: 20px; */
   line-height: 1.11111;
   color: #159be8;
+}
+
+/* !========= */
+
+.services {
+  background-color: #010225;
+  border-radius: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 50px;
+}
+
+.services > .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.section-title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.35;
+  text-align: center;
+  color: #fff;
+  max-width: 666px;
+}
+.section-subtitle {
+  font-weight: 300;
+  font-size: 12px;
+  max-width: 699px;
+  line-height: 2.5;
+  text-align: center;
+  color: #fff;
+}
+.services-list-left {
+  display: flex;
+  flex-direction: column;
+  gap: 94px;
+}
+.services-item-left {
+  background-color: #0c0d2e;
+  padding: 20px;
+  border-radius: 20px;
+}
+.services-title-left {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  text-align: right;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.services-text-left {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: right;
+  color: #fff;
+  max-width: 339px;
+}
+.services-list-right {
+  display: flex;
+  flex-direction: column;
+  gap: 94px;
+}
+.services-item-right {
+  background-color: #0c0d2e;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.services-title-right {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  text-align: right;
+  color: #fff;
+  max-width: 339px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.services-text-right {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: right;
+  color: #fff;
+  max-width: 339px;
+  text-align: left;
+}
+
+.services-img {
+  margin-right: 40px;
+  margin-left: 40px;
 }
