@@ -103,7 +103,8 @@ button {
 
 .main {
   background-color: #010225;
-  border-radius: 100px;
+  border-radius: 60px;
+
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -199,8 +200,6 @@ button {
 .about-text {
   font-weight: 400;
   font-size: 11px;
-
-  /* line-height: 24px; */
   line-height: 2.18182;
   text-align: center;
   color: #fff;
@@ -217,7 +216,7 @@ button {
 
 .services {
   background-color: #010225;
-  border-radius: 100px;
+  border-radius: 60px;
   margin-left: 20px;
   margin-right: 20px;
   padding: 50px;
@@ -262,6 +261,7 @@ button {
   background-color: #0c0d2e;
   padding: 20px;
   border-radius: 20px;
+  border-top: #159be8 2px solid;
 }
 .services-title-left {
   font-weight: 400;
@@ -288,6 +288,7 @@ button {
   background-color: #0c0d2e;
   padding: 20px;
   border-radius: 20px;
+  border-top: #159be8 2px solid;
 }
 
 .services-title-right {
@@ -325,9 +326,6 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.mobile-box {
 }
 
 .mobile-friendly {
@@ -374,9 +372,6 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.mobile-icon-img {
 }
 
 .mobile-benefit-title {
@@ -456,9 +451,6 @@ button {
   padding-bottom: 50px;
 }
 
-.container {
-}
-
 .reviews-subtitle {
   font-weight: 400;
   font-size: 18px;
@@ -492,12 +484,6 @@ button {
   max-width: 180px;
 }
 
-.logo-item {
-}
-
-.logo-link {
-}
-
 .reviews-list {
   display: flex;
   gap: 30px;
@@ -505,12 +491,6 @@ button {
 
 .reviews-item {
   max-width: 295px;
-}
-
-.star-rating {
-}
-
-.star-icon {
 }
 
 .reviews-text {
@@ -525,12 +505,6 @@ button {
   display: flex;
   align-items: center;
   gap: 14px;
-}
-
-.reviews-avatar {
-}
-
-.reviews-author-info {
 }
 
 .reviews-author-name {
@@ -558,11 +532,8 @@ button {
 }
 
 .pricing-subtitle {
-  font-family: "League Spartan", sans-serif;
   font-weight: 400;
   font-size: 18px;
-
-  /* line-height: 20px; */
   line-height: 1.11111;
   text-transform: uppercase;
   text-align: center;
@@ -654,11 +625,8 @@ button {
 }
 
 .pricing-description {
-  font-family: "League Spartan", sans-serif;
   font-weight: 400;
   font-size: 16px;
-
-  /* line-height: 22px; */
   line-height: 1.375;
   text-align: center;
   color: #fff;
@@ -666,7 +634,6 @@ button {
 }
 
 .pricing-button {
-  font-family: "League Spartan", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
@@ -685,21 +652,15 @@ button {
 .buy {
   padding-top: 50px;
   padding-bottom: 50px;
-  border-radius: 60px;
+  border-radius: 40px;
   margin: 0 20px;
   margin-bottom: 50px;
   background: #010225;
 }
 
-.section {
-}
-
 .buy-title {
-  font-family: "League Spartan", sans-serif;
   font-weight: 400;
   font-size: 40px;
-
-  /* line-height: 54px; */
   line-height: 1.35;
   text-align: center;
   color: #fff;
@@ -708,11 +669,8 @@ button {
 }
 
 .buy-subtitle {
-  font-family: "League Spartan", sans-serif;
   font-weight: 400;
   font-size: 18px;
-
-  /* line-height: 30px; */
   line-height: 1.66667;
   text-align: center;
   color: #fff;
@@ -728,15 +686,9 @@ button {
   margin-top: 40px;
 }
 
-.buy-item {
-}
-
 .buy-button-buy {
-  font-family: "League Spartan", sans-serif;
   font-weight: 400;
   font-size: 16px;
-
-  /* line-height: 16px; */
   line-height: 1;
   text-align: center;
   color: #fff;
@@ -750,11 +702,8 @@ button {
 }
 
 .view-button {
-  font-family: "League Spartan", sans-serif;
   font-weight: 400;
   font-size: 16px;
-
-  /* line-height: 16px; */
   line-height: 1;
   text-align: center;
   color: #fff;
@@ -779,11 +728,8 @@ button {
 }
 
 .footer-text {
-  font-family: "League Spartan", sans-serif;
   font-weight: 400;
   font-size: 30px;
-
-  /* line-height: 42px; */
   line-height: 1.4;
   text-align: center;
   color: #fff;
@@ -796,14 +742,34 @@ button {
 }
 
 .social-item {
+  display: flex;
 }
 
 .icon-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.icon-footer:hover {
+  background-color: #159be8;
+  transform: translateY(-2px);
+}
+
+.icon-footer svg {
+  width: 20px;
+  height: 20px;
   fill: #fff;
 }
 
 .icon-footer-use {
-  fill: #fff;
+  fill: inherit;
 }
 
 .footer-form {
@@ -812,17 +778,32 @@ button {
 }
 
 .footer-label {
-  font-family: "League Spartan", sans-serif;
   font-weight: 400;
   font-size: 24px;
-
-  /* line-height: 36px; */
   line-height: 1.5;
   text-align: center;
   color: #fff;
 }
 
 .footer-input {
+  width: 450px;
+  height: 48px;
+  border: none;
+  border-radius: 100px;
+  background: #212250;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-left: 20px;
+  outline: none;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #868686;
+    padding-left: 20px;
+  }
 }
 
 .footer-button {
@@ -844,8 +825,8 @@ button {
 .footer-text-last {
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.11111;
-  text-align: center;
-  color: #fff;
+  line-height: 1.11;
+  text-align: left;
+  color: #202265;
   margin-top: 30px;
 }
