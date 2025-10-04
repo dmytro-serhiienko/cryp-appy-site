@@ -314,3 +314,103 @@ button {
   margin-right: 40px;
   margin-left: 40px;
 }
+
+/* !============ */
+
+.mobile {
+  padding-top: 50px;
+}
+
+.mobile > .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-box {
+}
+
+.mobile-friendly {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.11111;
+  text-transform: uppercase;
+  color: #159be8;
+  margin-bottom: 28px;
+}
+
+.mobile-title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.35;
+  color: #fff;
+}
+
+.mobile-subtitle {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2.5;
+  color: #fff;
+}
+
+.mobile-list {
+  display: flex;
+  gap: 16px;
+}
+
+.mobile-item {
+  display: flex;
+  flex-direction: column;
+  max-width: 269px;
+}
+
+.mobile-icon {
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  background: #010225;
+  margin-top: 38px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-icon-img {
+}
+
+.mobile-benefit-title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  color: #fff;
+  margin-top: 12px;
+  margin-bottom: 10px;
+}
+
+.mobile-benefit-text {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 2.18182;
+  color: #fff;
+  margin-top: 8px;
+}
+
+.buy-button {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  color: #fff;
+
+  border: 2px solid #159be8;
+  border-radius: 100px;
+  width: 164px;
+  height: 48px;
+
+  background: #159be8;
+  margin-top: 60px;
+}
+
+.mobile-img {
+  max-width: 520px;
+}
