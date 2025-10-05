@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Stars</title>
+    <style>
+        body {
+            background-color: #0c0d2e;
+            padding: 50px;
+        }
+        
+        /* Inline SVG Stars - надежный способ */
+        .star-rating-inline {
+            display: flex;
+            gap: 5px;
+            margin: 20px 0;
+        }
+        
+        .star-icon-inline {
+            width: 24px;
+            height: 24px;
+            fill: #ffd700;
+        }
+        
+        /* External SVG Stars - может не работать на live сервере */
+        .star-rating-external {
+            display: flex;
+            gap: 5px;
+            margin: 20px 0;
+        }
+        
+        .star-icon-external {
+            width: 24px;
+            height: 24px;
+            fill: #ffd700;
+        }
+        
+        /* Unicode Stars - простейший способ */
+        .star-rating-unicode {
+            display: flex;
+            gap: 5px;
+            margin: 20px 0;
+            font-size: 24px;
+            color: #ffd700;
+        }
+        
+        h3 {
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h3>1. Inline SVG Stars (всегда работает):</h3>
+    <div class="star-rating-inline">
+        <svg class="star-icon-inline" viewBox="0 0 34 32">
+            <path d="M17.231 26.526l-10.634 5.465 2.031-11.575-8.603-8.197 11.89-1.689 5.317-10.531 5.317 10.531 11.89 1.689-8.604 8.197 2.031 11.575-10.634-5.465z"/>
+        </svg>
+        <svg class="star-icon-inline" viewBox="0 0 34 32">
+            <path d="M17.231 26.526l-10.634 5.465 2.031-11.575-8.603-8.197 11.89-1.689 5.317-10.531 5.317 10.531 11.89 1.689-8.604 8.197 2.031 11.575-10.634-5.465z"/>
+        </svg>
+        <svg class="star-icon-inline" viewBox="0 0 34 32">
+            <path d="M17.231 26.526l-10.634 5.465 2.031-11.575-8.603-8.197 11.89-1.689 5.317-10.531 5.317 10.531 11.89 1.689-8.604 8.197 2.031 11.575-10.634-5.465z"/>
+        </svg>
+        <svg class="star-icon-inline" viewBox="0 0 34 32">
+            <path d="M17.231 26.526l-10.634 5.465 2.031-11.575-8.603-8.197 11.89-1.689 5.317-10.531 5.317 10.531 11.89 1.689-8.604 8.197 2.031 11.575-10.634-5.465z"/>
+        </svg>
+        <svg class="star-icon-inline" viewBox="0 0 34 32">
+            <path d="M17.231 26.526l-10.634 5.465 2.031-11.575-8.603-8.197 11.89-1.689 5.317-10.531 5.317 10.531 11.89 1.689-8.604 8.197 2.031 11.575-10.634-5.465z"/>
+        </svg>
+    </div>
+
+    <h3>2. External SVG Stars (может не работать на live сервере):</h3>
+    <div class="star-rating-external">
+        <svg class="star-icon-external">
+            <use href="./icons/icons.svg#star"></use>
+        </svg>
+        <svg class="star-icon-external">
+            <use href="./icons/icons.svg#star"></use>
+        </svg>
+        <svg class="star-icon-external">
+            <use href="./icons/icons.svg#star"></use>
+        </svg>
+        <svg class="star-icon-external">
+            <use href="./icons/icons.svg#star"></use>
+        </svg>
+        <svg class="star-icon-external">
+            <use href="./icons/icons.svg#star"></use>
+        </svg>
+    </div>
+
+    <h3>3. Unicode Stars (самый простой способ):</h3>
+    <div class="star-rating-unicode">
+        <span>★</span>
+        <span>★</span>
+        <span>★</span>
+        <span>★</span>
+        <span>★</span>
+    </div>
+</body>
+</html>

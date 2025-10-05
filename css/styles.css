@@ -49,11 +49,10 @@ button {
 }
 
 /* ! header */
-
 .header {
   padding-right: 44px;
   padding-left: 44px;
-  padding-top: 30px;
+  padding-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -74,8 +73,15 @@ button {
   gap: 24px;
 }
 
+.nav-item {
+  transition: all 300ms ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
 .nav-link {
-  font-family: "League Spartan", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.11111;
@@ -97,16 +103,21 @@ button {
   width: 164px;
   height: 48px;
   background: transparent;
+
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: transparent;
+    color: #159be8;
+    border: 2px solid #159be8;
+  }
 }
 
-/* ! section */
-
+/* !Main section */
 .main {
   background-color: #010225;
   border-radius: 60px;
-
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 20px 20px 0 20px;
 }
 
 .main > .container {
@@ -139,8 +150,15 @@ button {
   max-width: 150px;
 }
 
-/* !======== */
+.download-item {
+  transition: all 300ms ease;
 
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+/* !About section */
 .about > .container {
   display: flex;
   flex-direction: column;
@@ -184,6 +202,8 @@ button {
   width: 50px;
   height: 50px;
   background: #010225;
+  box-shadow: 0px 0px 18px -4px #676767;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -210,10 +230,14 @@ button {
   font-size: 18px;
   line-height: 1.11111;
   color: #159be8;
+  transition: all 300ms ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
-/* !========= */
-
+/* !Services section */
 .services {
   background-color: #010225;
   border-radius: 60px;
@@ -252,53 +276,36 @@ button {
   text-align: center;
   color: #fff;
 }
-.services-list-left {
-  display: flex;
-  flex-direction: column;
-  gap: 94px;
-}
-.services-item-left {
-  background-color: #0c0d2e;
-  padding: 20px;
-  border-radius: 20px;
-}
-.services-title-left {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1;
-  text-align: right;
-  color: #fff;
-  margin-bottom: 10px;
-}
-.services-text-left {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: right;
-  color: #fff;
-  max-width: 339px;
-}
+.services-list-left,
 .services-list-right {
   display: flex;
   flex-direction: column;
   gap: 94px;
 }
+
+.services-item-left,
 .services-item-right {
   background-color: #0c0d2e;
   padding: 20px;
   border-radius: 20px;
+  box-shadow: 0px 0px 18px 0px #676767;
 }
 
+.services-title-left,
 .services-title-right {
   font-weight: 400;
   font-size: 20px;
   line-height: 1;
   text-align: right;
   color: #fff;
-  max-width: 339px;
-  text-align: left;
   margin-bottom: 10px;
 }
+
+.services-title-right {
+  text-align: left;
+}
+
+.services-text-left,
 .services-text-right {
   font-weight: 300;
   font-size: 16px;
@@ -306,16 +313,17 @@ button {
   text-align: right;
   color: #fff;
   max-width: 339px;
+}
+
+.services-text-right {
   text-align: left;
 }
 
 .services-img {
-  margin-right: 40px;
-  margin-left: 40px;
+  margin: 0 40px;
 }
 
-/* !============ */
-
+/* !Mobile section */
 .mobile {
   padding-top: 50px;
 }
@@ -329,7 +337,7 @@ button {
 .mobile-friendly {
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.11111;
+  line-height: 1.12;
   text-transform: uppercase;
   color: #159be8;
   margin-bottom: 28px;
@@ -365,6 +373,8 @@ button {
   width: 50px;
   height: 50px;
   background: #010225;
+  box-shadow: 0px 0px 18px -4px #676767;
+
   margin-top: 38px;
 
   display: flex;
@@ -384,7 +394,7 @@ button {
 .mobile-benefit-text {
   font-weight: 400;
   font-size: 11px;
-  line-height: 2.18182;
+  line-height: 2.19;
   color: #fff;
   margin-top: 8px;
 }
@@ -402,14 +412,21 @@ button {
 
   background: #159be8;
   margin-top: 60px;
+
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: transparent;
+    color: #159be8;
+    border: 2px solid #159be8;
+  }
 }
 
 .mobile-img {
   max-width: 520px;
 }
 
-/* ! Reviews Section Styles */
-
+/* ! Reviews section */
 /* Star Rating Styles */
 .star-rating {
   display: inline-block;
@@ -445,8 +462,7 @@ button {
 }
 
 .reviews {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 50px 0;
 }
 
 .reviews-subtitle {
@@ -520,19 +536,15 @@ button {
   color: #fff;
 }
 
-/* !========================== */
-
+/* !Pricing section */
 .pricing {
   margin-top: 100px;
-}
-
-.container {
 }
 
 .pricing-subtitle {
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.11111;
+  line-height: 1.12;
   text-transform: uppercase;
   text-align: center;
   color: #159be8;
@@ -553,7 +565,7 @@ button {
 .pricing-text {
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.66667;
+  line-height: 1.67;
   text-align: center;
   color: #fff;
   max-width: 700px;
@@ -625,7 +637,7 @@ button {
 .pricing-description {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.375;
+  line-height: 1.4;
   text-align: center;
   color: #fff;
   margin-bottom: 30px;
@@ -643,13 +655,19 @@ button {
   height: 48px;
 
   background: transparent;
+
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: transparent;
+    color: #159be8;
+    border: 2px solid #159be8;
+  }
 }
 
-/* !========================== */
-
+/* !Buy section */
 .buy {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 50px 0;
   border-radius: 40px;
   margin: 0 20px;
   margin-bottom: 50px;
@@ -669,7 +687,7 @@ button {
 .buy-subtitle {
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.66667;
+  line-height: 1.67;
   text-align: center;
   color: #fff;
   max-width: 699px;
@@ -697,6 +715,13 @@ button {
   height: 48px;
 
   background: #159be8;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: transparent;
+    color: #159be8;
+    border: 2px solid #159be8;
+  }
 }
 
 .view-button {
@@ -710,10 +735,17 @@ button {
   width: 180px;
   height: 48px;
   background-color: transparent;
+
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: transparent;
+    color: #159be8;
+    border: 2px solid #159be8;
+  }
 }
 
-/* ! */
-
+/* !Footer  */
 .footer {
   display: flex;
   flex-direction: column;
@@ -818,6 +850,14 @@ button {
   color: #fff;
   margin: 0 auto;
   margin-top: 20px;
+
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: transparent;
+    color: #159be8;
+    border: 2px solid #159be8;
+  }
 }
 
 .footer-text-last {
