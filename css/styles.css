@@ -678,6 +678,9 @@ button {
   margin: 0 20px;
   margin-bottom: 50px;
   background: #010225;
+  position: relative;
+  border-right: #7c44e2 1px solid;
+  border-left: #7c44e2 1px solid;
 }
 
 .buy-title {
