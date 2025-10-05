@@ -414,12 +414,18 @@ button {
   margin-top: 60px;
 
   transition: all 0.3s ease;
+  position: relative;
 
   &:hover {
     background: transparent;
     color: #159be8;
     border: 2px solid #159be8;
   }
+}
+
+.button-bg-image {
+  position: absolute;
+  margin-left: 46px;
 }
 
 .mobile-img {
